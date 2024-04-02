@@ -1,12 +1,10 @@
 package PadroesEstruturais.Adapter;
 
-public class CodigoAdapter extends RevisaoCodigo{
+public class CodigoAdapter extends RevisaoLetra{
 
     private IRevisao revisaoCodigo;
-    private  RevisaoLetra revisaoLetra;
-    public CodigoAdapter(IRevisao revisaoCodigo, RevisaoLetra revisaoLetra){
+    public CodigoAdapter(IRevisao revisaoCodigo){
         this.revisaoCodigo = revisaoCodigo;
-        this.revisaoLetra = revisaoLetra;
     }
 
     public String recuperarCodigo() {
