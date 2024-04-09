@@ -1,13 +1,12 @@
 package PadroesEstruturais.Bridge;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RemakeTest {
 
     @Test
-    public void deveRetornarJogoRemakeComDLCconteudoExtra() {
+    void deveRetornarJogoRemakeComDLCconteudoExtra() {
         Jogo jogo = new DlcConteudoExtra();
         Remake remake = new Remake(240.0f);
         remake.setJogo(jogo);
