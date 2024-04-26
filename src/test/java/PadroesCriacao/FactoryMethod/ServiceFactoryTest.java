@@ -1,13 +1,13 @@
 package PadroesCriacao.FactoryMethod;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class ServiceFactoryTest {
 
     @Test
-    public void deveRetornarExcecaoParaServicoInexistente() {
+    void deveRetornarExcecaoParaServicoInexistente() {
         try {
             IService servico = ServiceFactory.obterServico("Reescrever");
             fail();
@@ -17,7 +17,7 @@ public class ServiceFactoryTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaServicoInvalido() {
+    void deveRetornarExcecaoParaServicoInvalido() {
         try {
             IService servico = ServiceFactory.obterServico("Change");
             fail();

@@ -1,13 +1,12 @@
 package PadroesCriacao.Builder;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class FuncionarioTest {
 
     @Test
-    public void deveRetornarFuncionarioValido() {
+    void deveRetornarFuncionarioValido() {
 
         FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
         Funcionario funcionario = funcionarioBuilder
@@ -21,7 +20,7 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaFuncionarioSemCodigo() {
+    void deveRetornarExcecaoParaFuncionarioSemCodigo() {
         try {
             FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
             Funcionario funcionario = funcionarioBuilder
@@ -37,7 +36,7 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaFuncionarioSemNome() {
+    void deveRetornarExcecaoParaFuncionarioSemNome() {
         try {
             FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
             Funcionario funcionario = funcionarioBuilder
@@ -53,7 +52,7 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaFuncionarioSemCPF() {
+    void deveRetornarExcecaoParaFuncionarioSemCPF() {
         try {
             FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
             Funcionario funcionario = funcionarioBuilder
@@ -69,7 +68,7 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaFuncionarioSemSalario() {
+    void deveRetornarExcecaoParaFuncionarioSemSalario() {
         try {
             FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
             Funcionario funcionario = funcionarioBuilder
@@ -85,7 +84,7 @@ public class FuncionarioTest {
     }
 
     @Test
-    public void deveRetornarExcecaoParaFuncionarioSemEmail() {
+    void deveRetornarExcecaoParaFuncionarioSemEmail() {
         try {
             FuncionarioBuilder funcionarioBuilder = new FuncionarioBuilder();
             Funcionario funcionario = funcionarioBuilder
